@@ -1,0 +1,151 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Header styles */
+h2 {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cityname {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cityname p {
+    color: #636e72;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Input styles */
+input[type="text"] {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #74b9ff;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.1);
+}
+
+/* Weather info styles */
+.weather {
+    background: #f1f2f6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 10px;
+    border-left: 4px solid #74b9ff;
+}
+
+.weather p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.Temp {
+    color: #e17055 !important;
+    font-size: 16px !important;
+}
+
+.id {
+    color: #00b894 !important;
+}
+
+.feels.like {
+    color: #a29bfe !important;
+}
+
+/* Button styles */
+.click {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.click:hover {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(116, 185, 255, 0.3);
+}
+
+.click:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    input[type="text"] {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .click {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
