@@ -1,6 +1,6 @@
 const BASE_URL=`https://api.openweathermap.org/data/2.5/weather?`
 // const BASE_URL=`https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}` this is the main link
-let API_KEY="0f562fa6dcd12c675f1290478a6b6fd7";
+let API_KEY="YOUR_API_KEY";
 const cityname=document.querySelector(".city")
 const btn=document.querySelector(".click");
 const temperature=document.querySelector(".Temp");
